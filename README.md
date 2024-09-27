@@ -1,33 +1,26 @@
-# elements-inspector-extension
+# ⚡️Elements inspector extension
 
-> a chrome extension tools built with Vite + React, and Manifest v3
-
-## Installing
-
-1. Check if your `Node.js` version is >= **14**.
-2. Change or configurate the name of your extension on `src/manifest`.
-3. Run `npm install` to install the dependencies.
+> a chrome extension to inspect elements built with Vite + React, and Manifest v3
 
 ## Developing
 
-run the command
+```shell
+git clone https://github.com/bozzhik/elements-inspector-extension.git
+cd elements-inspector-extension
+pnpm i
+pnpm dev
+```
+
+##### Full CLI command
 
 ```shell
-$ cd elements-inspector-extension
-
-$ npm run dev
+git clone https://github.com/bozzhik/elements-inspector-extension.git && cd elements-inspector-extension && pnpm i && code .
 ```
 
 ### Chrome Extension Developer Mode
 
 1. set your Chrome browser 'Developer mode' up
 2. click 'Load unpacked', and select `elements-inspector-extension/build` folder
-
-### Nomal FrontEnd Developer Mode
-
-1. access `http://0.0.0.0:3000/`
-2. when debugging popup page, open `http://0.0.0.0:3000//popup.html`
-3. when debugging options page, open `http://0.0.0.0:3000//options.html`
 
 ## Packing
 

@@ -3,7 +3,7 @@
   "displayName": "elements-inspector-extension",
   "version": "0.0.0",
   "author": "Maxim Bozhik",
-  "description": "",
+  "description": "a chrome extension to inspect elements",
   "type": "module",
   "license": "MIT",
   "keywords": [
