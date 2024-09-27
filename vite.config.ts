@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import { crx } from '@crxjs/vite-plugin'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 
 import manifest from './src/manifest'
 
@@ -23,7 +24,13 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+        '~': path.resolve(__dirname, './src/components'),
+        $: path.resolve(__dirname, './src/assets'),
+      },
+    },
     plugins: [crx({ manifest }), react()],
   }
 })
