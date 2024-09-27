@@ -1,5 +1,3 @@
-import './Popup.css'
-
 import Container from '~/Global/Container'
 
 import { TFontsData } from '@/lib/types'
