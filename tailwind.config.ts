@@ -2,7 +2,7 @@ import { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin'
 
 const config: Config = {
-  content: ['./src/modules/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{ts,tsx}'],
   theme: {
     extend: {},
   },
