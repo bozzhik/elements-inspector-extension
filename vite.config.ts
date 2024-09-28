@@ -28,7 +28,8 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@': path.resolve(__dirname, './src'),
         '~': path.resolve(__dirname, './src/components'),
-        $: path.resolve(__dirname, './src/assets'),
+        '~~': path.resolve(__dirname, './src/components/Modules'),
+        '$': path.resolve(__dirname, './src/assets'),
       },
     },
     plugins: [crx({ manifest }), react()],

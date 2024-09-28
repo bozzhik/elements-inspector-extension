@@ -1,4 +1,5 @@
 import Container from '~/Global/Container'
+import { FontDetails } from '~~/popup/FontDetails'
 
 import { TFontsData } from '@/lib/types'
 import { useState, useEffect } from 'react'
@@ -18,10 +19,7 @@ export const Popup = () => {
 
   return (
     <Container>
-      <div className="space-y-2">
-        <h4 className="text-2xl">Fonts Used on the Page:</h4>
-        <div>{fontInfo.join(', ')}</div>
-      </div>
+      <FontDetails fonts={fontInfo} />
     </Container>
   )
 }
